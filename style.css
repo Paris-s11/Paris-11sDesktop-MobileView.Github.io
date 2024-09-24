@@ -1,0 +1,124 @@
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style: normal;
+    font-size: 20px;
+    background:linear-gradient(black 20%, rgb(196, 158, 164) 70%, black 100%);
+}
+.maincontainer{
+    width: 100%;
+    min-height: fit-content;
+    max-width: 1800;
+    margin: 0px auto;
+    background:linear-gradient(black 20%, rgb(196, 158, 164) 70%, black 100%);
+}
+header .logo img{width: 150px;
+margin-left: 40px;}
+
+header{display: flex;
+justify-content:space-between;
+align-items: center;
+border-bottom: 3px solid pink;
+outline: 2px solid skyblue;}
+
+header nav span{color: white;
+margin-right: 30px;
+font-size: 0.9em;
+font-weight: 300;}
+
+header .btn button{background-color:black;
+border: 1px solid skyblue ;
+outline: 2px solid white;
+color: white;
+margin-right: 40px;
+padding:30px 20px;
+border-radius: 50%;}
+
+main{display: grid;
+grid-template-columns: 3fr 2fr;
+padding:0px 40px;}
+
+.menu{display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.menu h1{font-size: 5em;}
+.menu .cards a{margin-right: 10%;
+text-decoration: none;
+color: white;
+background-color: black;
+padding: 35px 20px;
+border: 2px solid white;
+border-radius: 50%;
+font-size: 0.8em;}
+.menu .cards .one{padding:35px 10px; margin-left: 10%;}
+.menu p{padding-top:5%;
+max-width:700px;}
+
+main .content{ 
+margin-top: 15%;
+}
+main .content img{margin-right: 5%;}
+
+main img{width:250px;
+height:250px;
+padding: 10px 0px;
+border-radius: 50%;
+}
+footer{display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid black ;
+}
+footer span{margin-top: 3%;}
+
+
+
+/*media query*/
+
+@media screen and (max-width:900px){
+    main{display:flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;}
+    main img {margin-left: 10%;}
+    .menu h1{color: white;}
+    main .cards{display: flex;
+    justify-content: center;}
+}
+
+/*media query phon*/
+
+@media screen and (max-width:600px){
+    header{display: grid;
+    grid-template-columns: 1fr;
+row-gap: 5px;
+border-bottom: none;
+outline: none;}
+header .btn button{background-color:black;
+    border: 1px solid skyblue ;
+    outline: 2px solid white;
+    color: white;
+    margin: 5px auto;
+    padding:10px 230px 10px 230px;
+    border-radius: 10px;
+display: block;}
+header .logo{margin-left: 30%;}
+header nav {margin-left: 25%;}
+.menu h1{font-size: 3em;
+text-align: center;}
+main{display: flex;
+flex-direction: column;
+justify-content: center;}
+main img {width: 150px;
+height: 150px;}
+.menu p{ text-align: center;}
+
+}
+
+
+
